@@ -763,6 +763,9 @@ body {
   .frend__slider-card:first-child {
     display: none;
   }
+  .button__prev, .button__next {
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1007,7 +1010,7 @@ form .user-box label {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .donation__container-context {
     margin: 0px 5px 60px 5px;
     max-width: 320px;
