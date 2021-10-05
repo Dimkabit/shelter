@@ -9,11 +9,12 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<!-- <meta name="robots" content="noindex, nofollow"> -->
 		<meta name="viewport" content="width=device-width">
+		<script src="js/popup.js" defer></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="wrapper__main">
-			<header class="header">
+			<header class="header" >
 				<div class="container">
 					<div class="header__row">
 					<div class="logo">
@@ -28,10 +29,10 @@
 						</div>
 						<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__link"><a href="" class="menu__link list__link_active"><span>About the shelter</span></a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link_disable"><span>Our pets</span></a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link_disable">Help the shelter</a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link_disable">Contacts</a></li>
+							<li class="menu__link"><a href="" class="menu__link list__link active"><span>About the shelter</span></a></li>
+							<li class="menu__link"><a href="" class="menu__link list__link"><span>Our pets</span></a></li>
+							<li class="menu__link"><a href="" class="menu__link list__link">Help the shelter</a></li>
+							<li class="menu__link"><a href="" class="menu__link list__link">Contacts</a></li>
 						</ul>
 						</nav>
 						</div>
@@ -81,7 +82,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="frend">
+		<section class="frend lock-padding" id="frend">
 			<div class="container">
 				<div class="frend__container">
 					<h2 class="frend__title">Our friends who<br> are looking for a house</h2>
@@ -89,7 +90,7 @@
 						<a href="#" class="button__prev"><img src="img/icons/prev.png" alt="icon: arrow prev" width="14" height="6"></a>
 								<div class="frend__slider">
 									<div class="frend__slider-card">
-										<img src="img/pets/pets-katrine.png" alt="photo: cat Katrine" class="slader__img" width="270" height="270">
+										<a class="popup-link" href="#popup"><img  src="img/pets/pets-katrine.png" alt="photo: cat Katrine" class="slader__img " width="270" height="270"></a>
 										<h3 class="slider__card-title">Katrine</h3>
 										<button type="button" class="content-section__batton button-slide">
 											<a href=""><span>Learn more</span></a>
@@ -179,8 +180,8 @@
 						<form>
 							<div class="user-box">
 								<img src="img/icons/credit-card.svg" alt="icon: credit card">
-								<input type="text" name="" required="">
-								<label><span>8</span>3<span>8</span>0 <span>2</span>8<span>8</span>0 <span>8</span>0<span>2</span>8 <span>8</span>7<span>9</span>1 <span>7</span>4<span>3</span>5</label>
+								<input id="textField" type="text" name="" min="2" max="20" required="" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?">
+								<label for="textField"><span>8</span>3<span>8</span>0 <span>2</span>8<span>8</span>0 <span>8</span>0<span>2</span>8 <span>8</span>7<span>9</span>1 <span>7</span>4<span>3</span>5</label>
 							 </div>
 						</form>
 						<p class="context__inform">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -188,6 +189,49 @@
 				</div>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__container">
+					<div class="footer__container-contact">
+						<div class="footer__question">
+							<h3 class="qustion-title">For questions and suggestions</h3>
+							<div class="question-mile">
+								<img src="img/icons/mail.png" alt="icon: mail-icon" class="mail-img" width="40" height="32">
+								<a href="mailto:email@shelter.com" class="question__mile-link">email@shelter.com</a>
+							</div>
+							<div class="question__phone">
+								<img src="img/icons/icon-phone.svg" alt="icon: phone-icon" class="phone__icon" width="40" height="32">
+								<a href="tel:13 674 567 75 54" class="question__phone-link">+13 674 567 75 54</a>
+							</div>
+						</div>
+						<div class="footer__visit">
+							<h3 class="visit__title">We are waiting<br> for your visit</h3>
+							<div class="visit__place">
+								<img src="img/icons/icon-marker.png" alt="icon: marker" class="visit__icon" width="22" height="32">
+								<p class="visit__adress">1 Central Street, Boston <br>(entrance from the store)</p>
+							</div>
+							<div class="visit__country">
+								<img src="img/icons/icon-marker.png" alt="icon: marker" class="visit__icon" width="22" height="32">
+								<p class="visit__adress">18 South Park, London</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__image">
+						<img src="img/footer-puppy.png" alt="photo: photo dog" class="image__footer" width="300" height="310">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" class="popup">
+		<!--<a href="#frend" class="popup__area"></a>-->
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="" class="popup__close close-popup">X</a>
+				<div class="popup__title">описание</div>
+				<div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et rem provident ut, sapiente exercitationem est voluptate culpa aliquid tempore quisquam amet fuga, perferendis esse iste cumque distinctio. Dolorem, quam?</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/script.js"></script>
 </body>
