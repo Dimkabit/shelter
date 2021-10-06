@@ -1018,7 +1018,7 @@ form .user-box label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .donation__container-context {
     margin: 0px 5px 60px 5px;
     max-width: 320px;
