@@ -1220,11 +1220,12 @@ form .user-box label {
   background-color: #fff;
   color: #000;
   max-width: 800px;
-  padding: 30px;
+  padding: 5px;
   position: relative;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
   opacity: 0;
+  border-radius: 10px;
   -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
           transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
@@ -1247,7 +1248,7 @@ form .user-box label {
 
 .popup__close {
   position: absolute;
-  right: 10px;
+  right: 25px;
   top: 10px;
   font-size: 20px;
   color: #000;
@@ -1269,4 +1270,8 @@ form .user-box label {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.popup__content .popup__card {
+  display: block;
 }
