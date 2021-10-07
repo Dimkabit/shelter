@@ -5,15 +5,18 @@
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/_style.css">
+		<!--<link rel="stylesheet" href="css/style.css">-->
 		<link rel="shortcut icon" href="favicon.ico">
 		<!-- <meta name="robots" content="noindex, nofollow"> -->
 		<meta name="viewport" content="width=device-width">
 		<script src="js/popup.js" defer></script>
+		<script src="js/smoothScroll.js" defer></script>
+		<script src="js/blockScrolled.js" defer></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="wrapper__main">
+		<div class="wrapper__main" id="about">
 			<header class="header" >
 				<div class="container">
 					<div class="header__row">
@@ -29,10 +32,10 @@
 						</div>
 						<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__link"><a href="" class="menu__link list__link active"><span>About the shelter</span></a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link"><span>Our pets</span></a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link">Help the shelter</a></li>
-							<li class="menu__link"><a href="" class="menu__link list__link">Contacts</a></li>
+							<li class="menu__links"><a href="#about" class="menu__link list__link active-link"><span>About the shelter</span></a></li>
+							<li class="menu__links"><a href="/pets/pets.html" class="menu__link list__link"><span>Our pets</span></a></li>
+							<li class="menu__links"><a href="#help" class="menu__link list__link"><span>Help the shelter</span></a></li>
+							<li class="menu__links"><a href="#contact" class="menu__link list__link"><span>Contacts</span></a></li>
 						</ul>
 						</nav>
 						</div>
@@ -40,7 +43,7 @@
 				</div>
 			</header>
 			<main>
-				<section class="wrapper">
+				<section class="wrapper" >
 					<div class="container">
 						<div class="hero__content">
 							<div class="hero__content-section">
@@ -121,7 +124,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="can">
+		<section class="can" id="help">
 			<div class="container">
 				<div class="can__container">
 					<h2 class="can__title">How you can help <br> our shelter</h2>
@@ -189,7 +192,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="container">
 				<div class="footer__container">
 					<div class="footer__container-contact">
@@ -228,7 +231,7 @@
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider popup__card">
+				<div class="frend__slider">
 					<div class="frend__slider-card">
 						<a class="popup-link" href="#popup"><img  src="img/pets/pets-katrine.png" alt="photo: cat Katrine" class="slader__img " width="270" height="270"></a>
 						<h3 class="slider__card-title">Katrine</h3>
@@ -245,7 +248,7 @@
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider-card popup__card">
+				<div class="frend__slider-card>
 					<a class="popup-link" href="#popup"><img src="img/pets/pets-jennifer.png" alt="photo: dog-jenifer" class="slader__img" width="270" height="270"></a>
 					<h3 class="slider__card-title">Jennifer</h3>
 					<button type="button" class="content-section__batton button-slide">
@@ -260,7 +263,7 @@
 		<div class="popup__body">
 			<div class="popup__content">
 				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider-card popup__card">
+				<div class="frend__slider-card">
 					<a class="woody popup-link" href="#popup"><img src="img/pets/pets-woody.png" alt="photo: dog-woody" class="slader__img" width="270" height="270"></a>
 					<h3 class="slider__card-title">Woody</h3>
 					<button type="button" class="content-section__batton button-slide">
