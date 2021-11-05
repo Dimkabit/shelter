@@ -111,11 +111,7 @@ const data = [
 	
  })
 
-const cardIndex = data.forEach((cards, index) => {
-	let indexCard = index
-	console.log(indexCard);
-})
-console.log(cardIndex);
+
 
  /*for(let i = 0; i < data.length; i++) {
 	 const fetch = document.querySelector('.frend__slider').innerHTML;
