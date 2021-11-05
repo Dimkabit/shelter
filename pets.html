@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<!-- <meta name="robots" content="noindex, nofollow"> -->
 		<meta name="viewport" content="width=device-width">
+		<script src="js/card.js" defer></script>
 		<script src="js/popup.js" defer></script>
 		<script src="js/smoothScroll.js" defer></script>
 		<script src="js/blockScrolled.js" defer></script>
@@ -50,66 +51,15 @@
 					<h2 class="frend__title">Our friends who<br> are looking for a house</h2>
 					<div class="frend__sliders">
 						<div class="frend__slider">
-							<div class="frend__slider-card">
-								<a class="popup-link" href="#popup"><img  src="img/pets/pets-katrine.png" alt="photo: cat Katrine" class="slader__img " width="270" height="270"></a>
-								<h3 class="slider__card-title">Katrine</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="popup-link" href="#popup__jenifer"><img src="img/pets/pets-jennifer.png" alt="photo: dog-jenifer" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Jennifer</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-woody.png" alt="photo: dog-woody" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Woody</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-sophia.png" alt="photo: dog-sophia" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Sophia</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-timmy.png" alt="photo: cat-timmy" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Timmy</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-charly.png" alt="photo: dog-charly" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Charly</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-scarlet.png" alt="photo: dog-scarlet" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Scarlett</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
-							<div class="frend__slider-card">
-								<a class="woody popup-link" href="#popup__woody"><img src="img/pets/pets-freddie.png" alt="photo: dog-freddie" class="slader__img" width="270" height="270"></a>
-								<h3 class="slider__card-title">Freddie</h3>
-								<button type="button" class="content-section__batton button-slide">
-									<a href=""><span>Learn more</span></a>
-								</button>
-							</div>
 						</div>
 					</div>
-					<a href="#" class="button__prev"><img src="img/icons/prev.png" alt="icon: arrow prev" width="14" height="6"></a>
-					<a href="#" class="button__next"><img src="img/icons/next.png" alt="icon: arrow next" width="14" height="6"></a>
+					<div class="button__group">
+						<a href="#" class="button__prev"><img src="img/icons/2next.svg" alt="icon: arrow prev"></a>
+						<a href="#" class="button__prev"><img src="img/icons/next.svg" alt="icon: arrow prev"></a>
+						<a href="#" class="button__prev center">1</a>
+						<a href="#" class="button__next"><img src="img/icons/next.svg" alt="icon: arrow next"></a>
+						<a href="#" class="button__next"><img src="img/icons/2next.svg" alt="icon: arrow next"></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -147,53 +97,35 @@
 			</div>
 		</footer>
 	</div>
+	
 	<div id="popup" class="popup">
 		<!--<a href="#frend" class="popup__area"></a>-->
 		<div class="popup__body">
-			<div class="popup__content">
-				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider">
+				<div class="popup__content">
+					<a href="" class="popup__close close-popup">X</a>
 					<div class="frend__slider-card">
-						<a class="popup-link" href="#popup"><img  src="img/pets/pets-katrine.png" alt="photo: cat Katrine" class="slader__img " width="270" height="270"></a>
-						<h3 class="slider__card-title">Katrine</h3>
+						<a class="popup-link" href="#popup"><img src="img/pets/pets-jennifer.png" alt="photo: dog-jenifer" class="slader__img" width="270" height="270"></a>
+						<h3 class="slider__card-title popup-title">Jennifer</h3>
 						<button type="button" class="content-section__batton button-slide">
 							<a href=""><span>Learn more</span></a>
 						</button>
 					</div>
+					<div class="popup__info">
+						<h3 class="slider__card-title popup-title">Jennifer</h3>
+						<h4 class="info__subtitle">Dog - Labrador</h4>
+						<p class="info__text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+						<ul class="info__list">
+							<li class="list__info"><strong>Age:</strong> 2 months</li>
+							<li class="list__info"><strong>Inoculations:</strong> none</li>
+							<li class="list__info"><strong>Diseases:</strong> none</li>
+							<li class="list__info"><strong>Parasites:</strong> none</li>
+						</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	<div id="popup__jenifer" class="popup">
-		<!--<a href="#frend" class="popup__area"></a>-->
-		<div class="popup__body">
-			<div class="popup__content">
-				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider-card">
-					<a class="popup-link" href="#popup"><img src="img/pets/pets-jennifer.png" alt="photo: dog-jenifer" class="slader__img" width="270" height="270"></a>
-					<h3 class="slider__card-title">Jennifer</h3>
-					<button type="button" class="content-section__batton button-slide">
-						<a href=""><span>Learn more</span></a>
-					</button>
-				</div>
-		</div>
-	</div>
-	</div>
-	<div id="popup__woody" class="popup">
-		<!--<a href="#frend" class="popup__area"></a>-->
-		<div class="popup__body">
-			<div class="popup__content">
-				<a href="" class="popup__close close-popup">X</a>
-				<div class="frend__slider-card">
-					<a class="woody popup-link" href="#popup"><img src="img/pets/pets-woody.png" alt="photo: dog-woody" class="slader__img" width="270" height="270"></a>
-					<h3 class="slider__card-title">Woody</h3>
-					<button type="button" class="content-section__batton button-slide">
-						<a href=""><span>Learn more</span></a>
-					</button>
-				</div>
-		</div>
-	</div>
-	</div>
+	
+	
 	<script src="js/script.js"></script>
 </body>
 </html>
